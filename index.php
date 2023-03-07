@@ -4,10 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.101.0">
-  <title>Create a CV</title>
+  <title>Create a Resume</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
@@ -17,9 +14,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     " rel="stylesheet">
+  <script src="../resume-builder/ckeditor/ckeditor.js"></script>
 
 
   <meta name="theme-color" content="#712cf9">
+
 
 </head>
 
@@ -67,47 +66,30 @@
 
               <input type="url3" name="url3" class="form-control">
             </div>
-            <!-- <div class="md-form mb-0">
-              <label for="url" class="">URL:</label>
-
-              <input type="url" name="url" class="form-control">
-            </div>
-            <div class="md-form mb-0">
-              <label for="url" class="">URL:</label>
-
-              <input type="url" name="url" class="form-control">
-            </div> -->
-
-
             <div class="md-form">
-              <label for="message">Description</label>
-
-              <textarea type="text" name="description" rows="4" class="form-control md-textarea"></textarea>
+              <label for="summary">Summary:</label>
+              <textarea type="text" name="summary" name="editor1" id="editor1" rows="4" class="form-control md-textarea"></textarea>
             </div>
-
             <div class="md-form">
-              <label for="message">Experience</label>
-
-              <textarea type="text" name="experience" rows="4" class="form-control md-textarea"></textarea>
+              <label for="exp1">Relevant Experience:</label>
+              <textarea type="text" rows="4" name="exp1" name="editor2" id="editor2" md-textarea class="form-control"></textarea>
             </div>
-
             <div class="md-form">
-              <label for="message">Education</label>
-
-              <textarea type="text" name="education" rows="4" class="form-control md-textarea"></textarea>
+              <label for="exp2">Work Experience:</label>
+              <textarea type="text" name="exp2" name="editor3" id="editor3" rows="4" md-textarea class="form-control"></textarea>
             </div>
-
-
+            <div class="md-form">
+              <label for="education">Education & Certifications:</label>
+              <textarea type="text" name="education" name="editor4" id="editor4" rows="4" class="form-control md-textarea"></textarea>
+            </div>
         </div>
-
         <div class="text-center text-md-left">
           <button name="submit" class="w-50 btn btn-lg btn-primary mt-4" type="submit">Create</button>
         </div>
+        </form>
+
+
       </div>
-      </form>
-
-
-  </div>
 
   </div>
 
@@ -117,6 +99,12 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js
         "></script>
+  <script>
+    CKEDITOR.replace('editor1');
+    CKEDITOR.replace('editor2');
+    CKEDITOR.replace('editor3');
+    CKEDITOR.replace('editor4');
+  </script>
 </body>
 
 </html>

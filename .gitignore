@@ -1,0 +1,76 @@
+@joshHawks1823 
+ckeditor
+/
+ckeditor4
+Public
+Fork your own copy of ckeditor/ckeditor4
+Code
+Issues
+1.2k
+Pull requests
+3
+Actions
+Projects
+Security
+7
+Insights
+ckeditor4/.gitignore
+@jacekbogdanski
+jacekbogdanski Updated deps and removed package-lock.json file.
+Latest commit 46e06d3 on Feb 23, 2022
+ History
+ 9 contributors
+@fredck@f1ames@jacekbogdanski@adelura@wwalc@Comandeer@mlewand@AnnaTomanek@oleq
+37 lines (28 sloc)  773 Bytes
+
+# These files will be ignored by Git and by our linting tools:
+#	grunt jshint
+#	grunt jscs
+#
+# Be sure to append /** to folders to have everything inside them ignored.
+
+# All "dot directories".
+.*/**
+
+node_modules/**
+build/**
+coverage/**
+
+dev/builder/release/**
+dev/builder/ckbuilder/**
+dev/langtool/po/**
+dev/langtool/cklangtool/**
+
+samples/toolbarconfigurator/.bender/**
+samples/toolbarconfigurator/node_modules/**
+samples/toolbarconfigurator/docs/**
+
+tests/security
+tests/plugins/mathjax/_assets/mathjax/**
+
+*.css.map
+
+bender-*.log
+
+!.github/**
+!.npm/*
+.DS_Store
+
+# Ignore package-lock.json
+# - we don't intent to force specific 3rd party dependency version via `package-lock.json` file
+# Such information should be specified in the package.json file.
+package-lock.json
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
