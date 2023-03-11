@@ -26,6 +26,8 @@ body .header-content {
   color: rgb(112, 105, 105);
 }
 
-.projects {
-  display: flex;
+
+.error {
+  color: red;
+  font-size: 90%;
 }

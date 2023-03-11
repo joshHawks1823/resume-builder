@@ -4,9 +4,9 @@ require_once __DIR__ . '/vendor/autoload.php';
 $mpdf = new \Mpdf\Mpdf(['tempDir' => '/tmp']); // init object like this
 
 if (isset($_POST['submit'])) {
-  $name = $_POST['name'];
+  $fullName = $_POST['fullName'];
   $email = $_POST['email'];
-  $phone = $_POST['phone'];
+  $phone_number = $_POST['phone_number'];
   $url = $_POST['url'];
   $url2 = $_POST['url2'];
   $url3 = $_POST['url3'];
@@ -36,8 +36,8 @@ $html = "<!DOCTYPE html>
     <script defer src='js/script.js'></script>
 </head>
 <body contenteditable>
-    <h2>$name</h2>
-    <p class='header-content'> <strong>Phone</strong>: $phone |
+    <h2>$fullName</h2>
+    <p class='header-content'> <strong>Phone</strong>: $phone_number |
     <strong>Email</strong>: $email
     <br>
     <strong>Website</strong>: $url 
