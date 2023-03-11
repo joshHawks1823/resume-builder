@@ -7,6 +7,7 @@
   <title>Create a Resume</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
     " rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
   <script src="../resume-builder/ckeditor/ckeditor.js"></script>
   <link rel="stylesheet" href="../resume-builder/style.css">
 
@@ -38,13 +39,12 @@
             </div>
 
             <div class="md-form mb-0">
-              <label for="subject" class="">Email</label>
+              <label for="subject" class="">Email:</label>
               <input type="text" name="email" class="form-control">
             </div>
             <div class="md-form mb-0">
-              <label for="url" class="">URL:</label>
-
-              <input type="url" name="url" class="form-control">
+              <label for="website" class="">Website:</label>
+              <input type="url" name="website" class="form-control">
             </div>
             <div class="md-form mb-0">
               <div class="md-form">
@@ -86,9 +86,9 @@
     CKEDITOR.replace('editor3');
     CKEDITOR.replace('editor4');
   </script>
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
   <script src="../resume-builder/validate.js"></script>
 
 </body>

@@ -7,9 +7,7 @@ if (isset($_POST['submit'])) {
   $fullName = $_POST['fullName'];
   $email = $_POST['email'];
   $phone_number = $_POST['phone_number'];
-  $url = $_POST['url'];
-  $url2 = $_POST['url2'];
-  $url3 = $_POST['url3'];
+  $website = $_POST['website'];
   $summary = $_POST['summary'];
   $exp1 = $_POST['exp1'];
   $exp2 = $_POST['exp2'];
@@ -31,7 +29,7 @@ $html = "<!DOCTYPE html>
     <p class='header-content'> <strong>Phone</strong>: $phone_number |
     <strong>Email</strong>: $email
     <br>
-    <strong>Website</strong>: $url 
+    <strong>Website</strong>: $website 
     <br>
     <h3 class='header'>Summary</h3>
     <p>$summary</p>

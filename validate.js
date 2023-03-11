@@ -5,22 +5,22 @@ $(document).ready(function() {
     rules: {
       fullName : {
         required: true,
-        minlength: 3,
+        minlength: 3
       },
       phone_number: {
         number: true,
         minlength: 10,
         maxlength: 10,
         required: true,
-        phoneUS: true,
+        phoneUS: true
       },
       email: {
         required: true,
         email: true
       },
-      url: {
+      website: {
         required: true,
-        url: true,
+        url: true
       }
     },
     messages : {
@@ -30,7 +30,7 @@ $(document).ready(function() {
       },
       email: {
         email: "The email should be in the format: abc@domain.tld"
-      },
+      }
     }
   });
 });
