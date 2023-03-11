@@ -64,8 +64,8 @@
                 <textarea required type="text" name="education" name="editor4" id="editor4" rows="4" class="form-control md-textarea"></textarea>
               </div>
             </div>
-            <div class="text-center text-md-left">
-              <button name="submit" class="w-50 btn btn-lg btn-primary mt-4" type="submit">Create</button>
+            <div class="text-md-left">
+              <button name="submit" class="w-25 btn btn-lg btn-primary mt-4" type="submit">Create</button>
             </div>
           </form>
 
