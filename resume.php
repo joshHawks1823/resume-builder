@@ -16,15 +16,6 @@ if (isset($_POST['submit'])) {
   $education = $_POST['education'];
 }
 
-
-// <img width='125' height='125' style='max-width: 100%;' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSppkoKsaYMuIoNLDH7O8ePOacLPG1mKXtEng&usqp=CAU' alt='Daniel Żaczek'>
-
-
-// <h1 class='naglowek'>Curriculum Vitae</h1>
-// <h3 class='naglowek3'>Contact details</h3>
-
-
-
 $html = "<!DOCTYPE html>
 <html lang='en'>
 
@@ -32,7 +23,7 @@ $html = "<!DOCTYPE html>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title></title>
-    <link href='style.css' rel='stylesheet'>
+    <link rel='stylesheet' href='../resume-builder/style.css'>
     <script defer src='js/script.js'></script>
 </head>
 <body contenteditable>
@@ -42,19 +33,13 @@ $html = "<!DOCTYPE html>
     <br>
     <strong>Website</strong>: $url 
     <br>
-    <strong>Linkedin</strong>: $url2
-    <br>
-    <strong>Github</strong>: $url3
-    </p>
-    <h3 class='naglowek3'>Summary</h3>
+    <h3 class='header'>Summary</h3>
     <p>$summary</p>
-    <h3 class='naglowek3'>Relevant Experience</h3>
-    <div class='projects'>
+    <h3 class='header'>Relevant Experience</h3>
     <p>$exp1</p>
-    </div>
-    <h3 class='naglowek3'>Work Experience</h3>
+    <h3 class='header'>Work Experience</h3>
     <p>$exp2</p>
-    <h3 class='naglowek3'>Education</h3>
+    <h3 class='header'>Education</h3>
     <p>$education</p>
 
 
