@@ -22,6 +22,7 @@ label.error.fail-alert {
   border: 2px solid red;
   border-radius: 4px;
   line-height: 1;
+  margin-top: .2rem;
   padding: .3rem;
   background: #ffe6eb;
 }
