@@ -14,6 +14,7 @@ if (isset($_POST['submit'])) {
   $education = $_POST['education'];
 }
 
+// PHP
 $html = "<!DOCTYPE html>
 <html lang='en'>
 
